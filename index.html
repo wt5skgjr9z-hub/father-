@@ -1,207 +1,279 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Папа — Ты лучший!</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg-color: #0f172a;
-            --card-bg: #1e293b;
-            --accent: #f59e0b;
-            --text-main: #f8fafc;
-            --text-muted: #94a3b8;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            line-height: 1.6;
-            padding: 20px 15px;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        header {
-            text-align: center;
-            padding: 40px 10px 20px;
-        }
-
-        .badge {
-            background: rgba(245, 158, 11, 0.15);
-            color: var(--accent);
-            padding: 6px 14px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            display: inline-block;
-            margin-bottom: 15px;
-            border: 1px solid rgba(245, 158, 11, 0.3);
-        }
-
-        h1 {
-            font-size: 2.2rem;
-            font-weight: 800;
-            line-height: 1.2;
-            margin-bottom: 10px;
-        }
-
-        .subtitle {
-            color: var(--text-muted);
-            font-size: 1rem;
-        }
-
-        .card {
-            background: var(--card-bg);
-            border-radius: 18px;
-            padding: 24px;
-            margin-top: 25px;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-        }
-
-        .card-title {
-            font-size: 1.3rem;
-            font-weight: 700;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            color: var(--accent);
-        }
-
-        .superpower-list {
-            list-style: none;
-        }
-
-        .superpower-list li {
-            position: relative;
-            padding-left: 30px;
-            margin-bottom: 14px;
-            font-size: 0.95rem;
-        }
-
-        .superpower-list li::before {
-            content: "🔧";
-            position: absolute;
-            left: 0;
-            top: 2px;
-        }
-
-        .memory-block {
-            background: linear-gradient(145deg, #1e293b, #0f172a);
-            border-left: 4px solid var(--accent);
-            padding: 15px;
-            border-radius: 0 12px 12px 0;
-            margin-top: 15px;
-            font-style: italic;
-            color: #e2e8f0;
-        }
-
-        .btn-interactive {
-            width: 100%;
-            background: var(--accent);
-            color: #000;
-            border: none;
-            padding: 16px;
-            border-radius: 12px;
-            font-weight: 800;
-            font-size: 1rem;
-            margin-top: 25px;
-            cursor: pointer;
-            transition: transform 0.2s, background 0.2s;
-        }
-
-        .btn-interactive:active {
-            transform: scale(0.98);
-        }
-
-        #secret-message {
-            display: none;
-            margin-top: 15px;
-            text-align: center;
-            animation: fadeIn 0.5s ease-in-out;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            padding-bottom: 20px;
-            color: var(--text-muted);
-            font-size: 0.85rem;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Папа — Ты Настоящая Легенда! 🛠️😎</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+:root {
+--bg-color: #0b0f19;
+--card-bg: #151c2e;
+--accent: #f59e0b;
+--accent-glow: rgba(245, 158, 11, 0.3);
+--text-main: #f8fafc;
+--text-muted: #94a3b8;
+}
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: 'Montserrat', sans-serif;
+}
+body {
+background-color: var(--bg-color);
+color: var(--text-main);
+line-height: 1.6;
+padding: 20px 15px 60px;
+max-width: 650px;
+margin: 0 auto;
+}
+header {
+text-align: center;
+padding: 30px 10px 10px;
+}
+.avatar-wrap {
+width: 130px;
+height: 130px;
+margin: 0 auto 15px;
+border-radius: 50%;
+padding: 4px;
+background: linear-gradient(135deg, var(--accent), #ef4444);
+box-shadow: 0 0 25px var(--accent-glow);
+}
+.avatar-wrap img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 50%;
+}
+.badge {
+background: rgba(245, 158, 11, 0.15);
+color: var(--accent);
+padding: 6px 16px;
+border-radius: 20px;
+font-size: 0.8rem;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 1.5px;
+display: inline-block;
+margin-bottom: 12px;
+border: 1px solid rgba(245, 158, 11, 0.3);
+}
+h1 {
+font-size: 2.2rem;
+font-weight: 900;
+line-height: 1.2;
+margin-bottom: 8px;
+background: linear-gradient(to right, #fff, var(--accent));
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.subtitle {
+color: var(--text-muted);
+font-size: 0.95rem;
+}
+/* Карточки */
+.card {
+background: var(--card-bg);
+border-radius: 20px;
+padding: 22px;
+margin-top: 25px;
+border: 1px solid rgba(255, 255, 255, 0.07);
+box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+.card-title {
+font-size: 1.25rem;
+font-weight: 700;
+margin-bottom: 18px;
+display: flex;
+align-items: center;
+gap: 10px;
+color: var(--accent);
+}
+/* Галерея фотографий */
+.gallery-grid {
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+.photo-item {
+background: rgba(0, 0, 0, 0.25);
+border-radius: 16px;
+overflow: hidden;
+border: 1px solid rgba(255, 255, 255, 0.1);
+transition: transform 0.3s;
+}
+.photo-item img {
+width: 100%;
+height: 320px;
+object-fit: cover;
+display: block;
+}
+.photo-desc {
+padding: 14px 16px;
+font-size: 0.9rem;
+color: #e2e8f0;
+background: #111827;
+}
+.photo-tag {
+display: inline-block;
+font-size: 0.75rem;
+font-weight: 700;
+color: var(--accent);
+text-transform: uppercase;
+margin-bottom: 4px;
+}
+/* Список суперсил */
+.superpower-list {
+list-style: none;
+}
+.superpower-list li {
+position: relative;
+padding-left: 32px;
+margin-bottom: 16px;
+font-size: 0.95rem;
+}
+.superpower-list li::before {
+content: "🛠️";
+position: absolute;
+left: 0;
+top: 2px;
+}
+/* Текстовые блоки */
+.quote-box {
+background: linear-gradient(145deg, rgba(245, 158, 11, 0.1), transparent);
+border-left: 4px solid var(--accent);
+padding: 16px;
+border-radius: 0 14px 14px 0;
+margin-top: 15px;
+font-style: italic;
+color: #f1f5f9;
+}
+/* Кнопка */
+.btn-action {
+width: 100%;
+background: linear-gradient(135deg, var(--accent), #d97706);
+color: #0f172a;
+border: none;
+padding: 18px;
+border-radius: 14px;
+font-weight: 800;
+font-size: 1.05rem;
+margin-top: 30px;
+cursor: pointer;
+box-shadow: 0 8px 20px rgba(245, 158, 11, 0.3);
+transition: transform 0.2s;
+}
+.btn-action:active {
+transform: scale(0.98);
+}
+#secret-message {
+display: none;
+margin-top: 20px;
+text-align: center;
+border: 1px solid var(--accent);
+animation: fadeIn 0.5s ease-in-out;
+}
+@keyframes fadeIn {
+from { opacity: 0; transform: translateY(-10px); }
+to { opacity: 1; transform: translateY(0); }
+}
+footer {
+text-align: center;
+margin-top: 40px;
+color: var(--text-muted);
+font-size: 0.85rem;
+}
+</style>
 </head>
 <body>
-
-    <header>
-        <span class="badge">Эксклюзивно для Папы</span>
-        <h1>Папа, ты легенда! 🛠️</h1>
-        <p class="subtitle">Сайт о главном автомеханике моей жизни</p>
-    </header>
-
-    <!-- Блок с юмором про автосервис -->
-    <div class="card">
-        <div class="card-title">
-            <span>⚡</span> Официальные суперсилы
-        </div>
-        <ul class="superpower-list">
-            <li><b>Сверхзвуковая диагностика:</b> Определяет стук в подвеске по звуку за три квартала от автосервиса.</li>
-            <li><b>Мастер головки на 10:</b> Единственный человек на планете, у которого эта головка никогда не теряется.</li>
-            <li><b>Железное терпение:</b> Столько лет работы с машинами научили чинить вообще всё — от двигателей до любых жизненных проблем.</li>
-            <li><b>Золотые руки:</b> Способен оживить даже то, на чём официальный дилер давно поставил крест.</li>
-        </ul>
-    </div>
-
-    <!-- Блок про детство -->
-    <div class="card">
-        <div class="card-title">
-            <span>❤️</span> Самое ценное из детства
-        </div>
-        <p>Папа, мы общались в основном в моём детстве, и те дни — одно из самых теплых и важной воспоминаний в моей жизни.</p>
-        <div class="memory-block">
-            «Каждый момент, когда мы были рядом, каждый твой совет и просто время вместе оставили след на всю жизнь. Ты всегда был и остаешься для меня примером настоящего мужчины и мастера своего дела.»
-        </div>
-    </div>
-
-    <!-- Интерактивная кнопка -->
-    <button class="btn-interactive" onclick="showMessage()">Нажми сюда, Папа! 🎁</button>
-
-    <div id="secret-message" class="card">
-        <div class="card-title" style="justify-content: center;">
-            <span>🚘</span> Главный вердикт
-        </div>
-        <p style="font-weight: 600; font-size: 1.1rem; color: #fff;">
-            Диагностика завершена: 100% идеальный Папа. <br><br>
-            Спасибо тебе за всё! Я тебя очень люблю!
-        </p>
-    </div>
-
-    <footer>
-        Сделано с любовью для самого лучшего папы ❤️
-    </footer>
-
-    <script>
-        function showMessage() {
-            const msg = document.getElementById('secret-message');
-            msg.style.display = 'block';
-            msg.scrollIntoView({ behavior: 'smooth' });
-        }
-    </script>
+<header>
+<!-- Главное фото папы в круге -->
+<div class="avatar-wrap">
+<img src="dad1.jpg" alt="Папа">
+</div>
+<span class="badge">Chief Executive Officer</span>
+<h1>Папа, ты легенда! 🔥</h1>
+<p class="subtitle">Мастер золотые руки, главная поддержка и лучший компаньон</p>
+</header>
+<!-- Фотогалерея совместных моментов -->
+<div class="card">
+<div class="card-title">
+<span>📸</span> Наш спецрепортаж из Питера
+</div>
+<div class="gallery-grid">
+<!-- Фото 1: У моста -->
+<div class="photo-item">
+<img src="dad4.jpg" alt="Разводной мост">
+<div class="photo-desc">
+<span class="photo-tag">📍 Санкт-Петербург / Разводные мосты</span>
+<p>Даже мосты в Питере разводятся от уважения к автомеханику с таким стажем! 😎</p>
+</div>
+</div>
+<!-- Фото 2: Собор -->
+<div class="photo-item">
+<img src="dad2.jpg" alt="Исаакиевский собор">
+<div class="photo-desc">
+<span class="photo-tag">📍 Исаакиевский собор</span>
+<p>Оцениваем прочность архитектуры 19 века. Вердикт папы: «Сделано на совесть, прослужит ещё долго!»</p>
+</div>
+</div>
+<!-- Фото 3: Корабль -->
+<div class="photo-item">
+<img src="dad3.jpg" alt="Эсминец">
+<div class="photo-desc">
+<span class="photo-tag">📍 Кронштадт / Эсминец №620</span>
+<p>Единственный специалист, которому доверили бы диагностику двигателя этого корабля без инструкции.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Суперсилы -->
+<div class="card">
+<div class="card-title">
+<span>⚙️</span> Досье и суперсилы
+</div>
+<ul class="superpower-list">
+<li><b>Сверхзвуковая диагностика:</b> Определяет стук в подвеске по звуку за три квартала от автосервиса.</li>
+<li><b>Мастер головки на 10:</b> Единственный человек на планете, у которого эта головка никогда не теряется.</li>
+<li><b>Железное терпение:</b> Столько лет работы с машинами научили чинить вообще всё — от моторов до жизненных ситуаций.</li>
+<li><b>Стиль и харизма:</b> Выглядит так, будто в любой момент готов сняться в продолжении «Форсажа».</li>
+</ul>
+</div>
+<!-- Детство и настоящее -->
+<div class="card">
+<div class="card-title">
+<span>❤️</span> Главное из нашего общения
+</div>
+<p>Папа, пусть активнее всего мы общались в детстве, но каждая минута, проведенная с тобой, заложила во мне фундамент настоящего мужчины.</p>
+<div class="quote-box">
+«От детских воспоминаний до совместных поездок сегодня — ты всегда остаешься для меня главным авторитетом, примером силы, характера и мастерства.»
+</div>
+</div>
+<!-- Кнопка -->
+<button class="btn-action" onclick="showSecret()">Нажми сюда, Папа! 🏆</button>
+<!-- Секретный блок -->
+<div id="secret-message" class="card">
+<div class="card-title" style="justify-content: center;">
+<span>🏁</span> Финальный вердикт
+</div>
+<p style="font-weight: 700; font-size: 1.1rem; color: #fff; margin-bottom: 10px;">
+Диагностика завершена: 100% Идеальный Папа.
+</p>
+<p style="color: var(--text-muted);">
+Спасибо за то, кто ты есть. Я тебя очень люблю и горжусь тем, что я твой сын!
+</p>
+</div>
+<footer>
+Сделано с уважением и любовью для самого лучшего папы ❤️
+</footer>
+<script>
+function showSecret() {
+const msg = document.getElementById('secret-message');
+msg.style.display = 'block';
+msg.scrollIntoView({ behavior: 'smooth' });
+}
+</script>
 </body>
 </html>
